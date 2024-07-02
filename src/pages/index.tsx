@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { Card, Button, Row, Col } from 'antd';
 import AppLayout from '@/components/Layout';
 
+
 interface Product {
   id: number;
   name: string;
@@ -79,7 +80,7 @@ const IndexPage: React.FC = () => {
                 <img
                   alt={product.name}
                   src={`data:image/png;base64,${product.image}`}
-                  style={{ maxHeight: '200px', objectFit: 'cover' }}
+                  className='productImage' 
                 />
               }
             >
