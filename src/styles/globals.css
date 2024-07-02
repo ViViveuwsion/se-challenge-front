@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  font-family: 'Kanit', sans-serif;
+  background: #F0E0D0;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.button-brown{
+  background-color: #F0E0D0 !important;
+  color: #D1AB85 !important;
+  font-family: 'Kanit', sans-serif !important;
+  border: none !important; 
+  margin: 5px;
+}
+
+.button-brown:hover, .button-brown:focus, .button-brown:active{
+  background-color: #3D2C1B !important;
+  color: #D1AB85 !important;
+  font-family: 'Kanit', sans-serif !important;
+  border: none !important; 
+  margin: 5px;
+
+}
+
+.button-darkbrown{
+  background-color: #3D2C1B !important;
+  color: #D1AB85 !important;
+  font-family: 'Kanit', sans-serif !important;
+  border: none !important; 
+  margin: 5px;
+}
+
+.button-darkbrown:hover, .button-darkbrown:focus, .button-darkbrown:active{
+  background-color: #3D2C1B !important;
+  color: #D1AB85 !important;
+  font-family: 'Kanit', sans-serif !important;
+  border: none !important; 
+  margin: 5px;
+
+}
+
+.button-red{
+  background-color: #FBD3D3 !important;
+  color: #EF4141 !important;
+  font-family: 'Kanit', sans-serif !important;
+  border: none !important; 
+  margin: 5px;
+
+}
+.button-red:hover, .button-red:focus, .button-red:active{
+  background-color: #EF4141 !important;
+  color: #F3F3F3 !important;
+  font-family: 'Kanit', sans-serif !important;
+  border: none !important; 
+  margin: 5px;
+
+}
+
+.payment-box{
+  
+  text-align: center;
+  color: #3D2C1B;
+  background-color: #D1AB85;
+}
+
+.out-of-stock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(128, 128, 128, 0.651);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.menu-item{
+  color: #3D2C1B;
+}
+
+#up{
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+  background-image: linear-gradient(80deg,rgb(236, 190, 91),rgb(245, 250, 175));
+  filter: blur(80px);
+  animation: down 40s infinite;
+}   
+#down{
+  position: absolute;
+  right: 0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-image: linear-gradient(80deg,rgb(167, 198, 240),rgb(244, 221, 53));
+  filter: blur(80px);
+  animation: up 30s infinite;
+}
+#left{
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-image: linear-gradient(80deg,rgb(133, 202, 241),rgb(247, 182, 128));
+  filter: blur(80px);
+  animation: left 30s 1s infinite;
+}
+#right{
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-image: linear-gradient(80deg,rgb(178, 228, 243),rgb(244, 221, 53));
+  filter: blur(80px);
+  animation: right 40s .5s infinite;
+}
+@keyframes down{
+  0%, 100%{
+      top: -100px;
+  }
+  70%{
+      top: 300px;
+  }
+}
+@keyframes up{
+  0%, 100%{
+      bottom:-100px;
+  }
+  70%{
+      bottom: 300px;
+  }
+}
+@keyframes left{
+  0%, 100%{
+      left:-100px;
+  }
+  70%{
+      left: 700px;
+  }
+}
+@keyframes right{
+  0%, 100%{
+      right:-100px;
+  }
+  70%{
+      right: 700px;
+  }
+}
